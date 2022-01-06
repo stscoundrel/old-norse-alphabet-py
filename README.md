@@ -51,6 +51,37 @@ print(result)
 
 ```
 
+#### Alphabet
+
+Alphabets are just immutable tuples of letters in ON alphabetical order with getter functions.
+
+```python
+from old_norse_alphabet import alphabet
+
+# Both alphabets contain 34 characters.
+upper = alphabet.get_upper() 
+lower = alphabet.get_lower()
+
+# There is special list for characters that are valid as first letter.
+valid_as_first = alphabet.get_valid_as_first()
+
+```
+
+Exposed special characters:
+
+```python
+from old_norse_alphabet import alphabet
+
+print(alphabet.eth) # ð
+print(alphabet.thorn) # þ
+print(alphabet.o_caudata) # ǫ
+print(alphabet.slashed_o) # ø
+print(alphabet.ae) # æ
+print(alphabet.oe) # œ
+print(alphabet.ash) # Alternative export of AE
+
+```
+
 ### About Old Norse
 
 [Old Norse](https://en.wikipedia.org/wiki/Old_Norse) was a North Germanic language that was spoken by inhabitants of Scandinavia and their overseas settlements from about the 7th to the 15th centuries.
