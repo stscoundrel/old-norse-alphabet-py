@@ -140,6 +140,47 @@ ValidFirsts = Tuple[
     str,
     str,
 ]
+SortingAlphabet = Tuple[
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+    str,
+]
 
 alphabet_upper = (
     "A",
@@ -248,6 +289,12 @@ valid_as_first = (
     "œ",
 )
 
+# Additional non-standard letters & signs needed for sorting.
+additional_chars = "ö", "x", "z"
+
+# Additional signs that should get priority in sorting
+priority_signs = "-", "_"
+
 eth = "ð"
 thorn = "þ"
 o_caudata = "ǫ"
@@ -271,3 +318,6 @@ def get_valid_as_first() -> ValidFirsts:
 
 def get_alphabet() -> CombinedAlphabet:
     return alphabet_lower + alphabet_upper
+
+def get_sorting_alphabet() -> SortingAlphabet:
+    return priority_signs + get_lower() + additional_chars
