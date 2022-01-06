@@ -17,3 +17,18 @@ def test_valid_at_first_does_not_contain_eth() -> None:
 
     for letter in valid_as_first:
         assert letter != "ð"
+
+
+def test_exports_special_characters_with_common_names() -> None:
+    result = (
+        alphabet.eth
+        + alphabet.thorn
+        + alphabet.o_caudata
+        + alphabet.ash
+        + alphabet.ae
+        + alphabet.slashed_o
+        + alphabet.oe
+    )
+    expected = "ðþǫææøœ"
+
+    assert result == expected

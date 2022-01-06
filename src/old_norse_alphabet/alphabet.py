@@ -248,6 +248,14 @@ valid_as_first = (
     "œ",
 )
 
+eth = "ð"
+thorn = "þ"
+o_caudata = "ǫ"
+ash = "æ"
+ae = "æ"  # alternative name
+slashed_o = "ø"
+oe = "œ"
+
 
 def get_lower() -> AlphabetList:
     return alphabet_lower
