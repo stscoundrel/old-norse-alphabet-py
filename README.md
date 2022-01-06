@@ -10,7 +10,7 @@ Also provides sorting function to get the old norse alphabet order just right.
 
 ### Install
 
-`pip install old-norse-alphabet`
+`pip install old_norse_alphabet`
 
 
 ### Usage
