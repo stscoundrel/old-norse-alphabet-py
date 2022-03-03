@@ -16,11 +16,11 @@
     "default": {
         "setuptools": {
             "hashes": [
-                "sha256:c99207037c38984eae838c2fd986f39a9ddf4fabfe0fddd957e622d1d1dcdd05",
-                "sha256:eb83b1012ae6bf436901c2a2cee35d45b7260f31fd4b65fd1e50a9f99c11d7f8"
+                "sha256:2347b2b432c891a863acadca2da9ac101eae6169b1d3dfee2ec605ecd50dbfe5",
+                "sha256:e4f30b9f84e5ab3decf945113119649fec09c1fc3507c6ebffec75646c56e62b"
             ],
             "index": "pypi",
-            "version": "==60.6.0"
+            "version": "==60.9.3"
         },
         "wheel": {
             "hashes": [
