@@ -1,5 +1,6 @@
 from functools import cmp_to_key
 from typing import Tuple
+
 from src.old_norse_alphabet import sort
 
 

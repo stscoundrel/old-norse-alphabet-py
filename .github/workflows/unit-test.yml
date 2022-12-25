@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.9.x, 3.10.x]
+        python-version: [3.9.x, 3.10.x, 3.11.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -23,4 +23,4 @@ jobs:
         pipenv install --deploy --dev
     - name: Test with Python ${{ matrix.python-version }}
       run: |
-        pipenv run pytest -v
+        pipenv run unit-test
