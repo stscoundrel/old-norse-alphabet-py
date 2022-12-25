@@ -319,5 +319,6 @@ def get_valid_as_first() -> ValidFirsts:
 def get_alphabet() -> CombinedAlphabet:
     return alphabet_lower + alphabet_upper
 
+
 def get_sorting_alphabet() -> SortingAlphabet:
     return priority_signs + get_lower() + additional_chars

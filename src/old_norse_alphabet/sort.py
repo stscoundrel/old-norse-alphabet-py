@@ -15,12 +15,12 @@ def compare(a: str, b: str, index: int, alphabet: SortingAlphabet) -> int:
 
     try:
         index_a = alphabet.index(a[index].lower())
-    except:
+    except ValueError:
         index_a = not_found
 
     try:
         index_b = alphabet.index(b[index].lower())
-    except:
+    except ValueError:
         index_b = not_found
 
     if index_a == not_found and index_b != not_found:
