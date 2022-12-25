@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.9.x, 3.10.x]
+        python-version: [3.9.x, 3.10.x, 3.11.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -23,5 +23,5 @@ jobs:
         pipenv install --deploy --dev
     - name: Check test coverage with Python ${{ matrix.python-version }}
       run: |
-        pipenv run coverage run -m pytest
-        pipenv run coverage report --fail-under=90
+        pipenv run test-coverage-create
+        pipenv run test-coverage-report

@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.9.x, 3.10.x]
+        python-version: [3.9.x, 3.10.x, 3.11.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -23,5 +23,6 @@ jobs:
         pipenv install --deploy --dev
     - name: Lint with Python ${{ matrix.python-version }}
       run: |
-        pipenv run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        pipenv run flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        pipenv run lint
+        pipenv run black-check
+        pipenv run isort-check
