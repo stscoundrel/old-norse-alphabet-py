@@ -1,6 +1,6 @@
-from typing import Tuple
+from typing import Final, Tuple
 
-AlphabetList = Tuple[
+AlphabetList = Final[Tuple[
     str,
     str,
     str,
@@ -35,8 +35,8 @@ AlphabetList = Tuple[
     str,
     str,
     str,
-]
-CombinedAlphabet = Tuple[
+]]
+CombinedAlphabet = Final[Tuple[
     str,
     str,
     str,
@@ -105,8 +105,8 @@ CombinedAlphabet = Tuple[
     str,
     str,
     str,
-]
-ValidFirsts = Tuple[
+]]
+ValidFirsts = Final[Tuple[
     str,
     str,
     str,
@@ -139,8 +139,8 @@ ValidFirsts = Tuple[
     str,
     str,
     str,
-]
-SortingAlphabet = Tuple[
+]]
+SortingAlphabet = Final[Tuple[
     str,
     str,
     str,
@@ -180,9 +180,9 @@ SortingAlphabet = Tuple[
     str,
     str,
     str,
-]
+]]
 
-alphabet_upper = (
+alphabet_upper: AlphabetList = (
     "A",
     "Á",
     "B",
@@ -218,7 +218,7 @@ alphabet_upper = (
     "Ø",
     "Œ",
 )
-alphabet_lower = (
+alphabet_lower: AlphabetList = (
     "a",
     "á",
     "b",
@@ -254,7 +254,7 @@ alphabet_lower = (
     "ø",
     "œ",
 )
-valid_as_first = (
+valid_as_first: ValidFirsts = (
     "a",
     "á",
     "b",
